@@ -35,7 +35,7 @@ Detect Zombie apocalypse by examining incoming requests and respond appropriatel
 
     app->start;
 
-Segfault if /brains are requested. (Zombies are generally REST-minded)
+Segfault if /brains are requested. (Zombies are dead, so they're RESTful)
 
 =head1 METHODS
 
