@@ -1,0 +1,54 @@
+=head1 NAME
+
+Mojolicious::Plugin::ZombieApocalypse
+
+=head1 DESCRIPTION
+
+Detect Zombie apocalypse by examining incoming requests and respond appropriately.
+
+=head1 USAGE
+
+    use Mojolicious::Lite;
+
+    plugin 'zombie_apocalypse';
+
+    get '/' => sub {
+        shift->render(text => 'No Zombies detected');
+    };
+
+    app->start;
+
+If want=brains is detected in GET or POST request, segfault and get the hell out.
+
+=head1 METHODS
+
+L<Mojolicious::Plugin::ZombieApocalypse> inherits all methods from
+L<Mojolicious::Plugin> and implements the following new ones.
+
+=head2 C<register>
+
+    $plugin->register;
+
+Register condition in L<Mojolicious> application.
+
+=head1 SEE ALSO
+
+L<Mojolicious>
+
+=head1 DEVELOPMENT
+
+L<http://github.com/tempire/mojolicious-plugin-zombieapocalypse>
+
+=head1 VERSION
+
+0.01
+
+=head1 CREDITS
+
+Implementation stolen from L<Plack::Middleware::ConsoleLogger>
+
+=head1 AUTHOR
+
+Glen Hinkle tempire@cpan.org
+
+=cut
