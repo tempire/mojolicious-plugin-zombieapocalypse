@@ -12,13 +12,14 @@ Detect Zombie apocalypse by examining incoming requests and respond appropriatel
 
     plugin 'zombie_apocalypse';
 
-    get '/' => sub {
-        shift->render(text => 'No Zombies detected');
+    get '/brains' => sub {
+        # Segfault.  Don't bother serving response, there's no time.
+        # Get the hell out of here
     };
 
     app->start;
 
-If want=brains is detected in GET or POST request, segfault and get the hell out.
+Segfault if /brains are requested. (Zombies are generally REST-minded)
 
 =head1 METHODS
 
