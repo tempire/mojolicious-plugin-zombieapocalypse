@@ -1,6 +1,6 @@
 =head1 NAME
 
-Mojolicious::Plugin::ZombieApocalypse
+Mojolicious::Plugin::ZombieApocalypse - Detect Zombie apocalypse
 
 =head1 DESCRIPTION
 
@@ -48,4 +48,3 @@ L<http://github.com/tempire/mojolicious-plugin-zombieapocalypse>
 
 Glen Hinkle tempire@cpan.org
 
-=cut
